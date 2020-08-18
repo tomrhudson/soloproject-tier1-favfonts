@@ -1,15 +1,9 @@
-footer {
-  text-align: center;
-  height: 2.5rem;
-  position: relative;
-  bottom: 0;
+header {
   width: 100%;
-  padding-top: 15px;
-  clear: both;
+  border-bottom: 1px solid grey;
 }
 
 /* NAVIGATION BAR */
-
 .nav-bar {
   background-color: white;
   overflow: hidden;
@@ -62,6 +56,32 @@ footer {
 .font-card h2, .font-card-info p {
   font-family: monospace;
   font-size: 1em;
+}
+
+/* ASIDE */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: .5;
+  font-size: 2em;
+}
+
+#back-to-top:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  height: 2.5rem;
+  /* position: relative; */
+  /* bottom: 0; */
+  font-size: .75em;
+  margin-bottom: 1em;
+  width: 100%;
+  padding-top: 15px;
+  clear: both;
 }
 
 /* RESPONSIVE  */

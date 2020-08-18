@@ -10,3 +10,23 @@ function hamburgerNavBarIcon() {
     x.className = "nav-bar";
   };
 }
+
+function changeColor() {
+
+}
+
+function changeFontCardLayout() {
+
+}
+
+function changeFontSize() {
+
+}
+
+function reset() {
+
+}
+
+function changeSampleText() {
+
+}
