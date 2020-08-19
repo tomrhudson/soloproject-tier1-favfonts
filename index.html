@@ -36,7 +36,7 @@
   </header>
 
   <main>
-    <nav id="main-nav">
+    <nav id="user-nav">
       <input type="text" id="search-fonts" name="search-fonts" placeholder="Search fonts">
       <input type="text" id="sample-text" name="sample-text" placeholder="Almost before we knew it, we had left the ground." oninput="changeSampleText(event)">
       <select class="" id="font-size" onchange="changeFontSize(event)">
@@ -45,15 +45,20 @@
         <option value="32px">32px</option>
         <option value="40px">40px</option>
       </select>
-      <div id="main-nav-selectors">
-        <div id="main-nav-color-chooser">
+      <div id="user-nav-selectors">
+        <div id="user-nav-color-chooser">
           <div id="white" onclick="changeColor('white')"></div>
           <div id="black" onclick="changeColor('black')"></div>
         </div>
-        <button type="button" name="main-nav-reset" id="main-nav-reset" onclick="resetAll()"><i class="fas fa-redo"></i></button>
+        <button type="button" name="user-nav-grid" id="user-nav-grid">
+          <i class="fas fa-border-all hide" id="grid-icon" onclick="toggleView(false)"></i>
+        </button>
+        <button type="button" name="user-nav-list" id="user-nav-list">
+          <i class="fas fa-list-ul" id="list-icon" onclick="toggleView(false)"></i>
+        </button>
+        <button type="button" name="user-nav-reset" id="user-nav-reset" onclick="resetAll()"><i class="fas fa-redo"></i></button>
       </div>
     </nav>
-
 
     <section id="font-card-container">
       <div class="font-card">
@@ -165,18 +170,17 @@
 
   <footer>
 
-    <!-- <div class=""> -->
-      <hr />
-      <a href="https://github.com/tomrhudson"><i class="fab fa-github"></i></a>
-      <a href="https://dev.to/tomrhudson"><i class="fab fa-dev"></i></a>
-      <a href="https://www.linkedin.com/in/hudsonthomas/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/thetomhudson/"><i class="social-icon fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/tomhudsonlive/"><i class="social-icon fab fa-instagram"></i></a>
-      <a href="mailto:tom@tomrhudson.com"><i class="fas fa-envelope"></i></a>
-    <!-- </div> -->
+  
+    <a href="https://github.com/tomrhudson"><i class="fab fa-github"></i></a>
+    <a href="https://dev.to/tomrhudson"><i class="fab fa-dev"></i></a>
+    <a href="https://www.linkedin.com/in/hudsonthomas/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://twitter.com/thetomhudson/"><i class="social-icon fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/tomhudsonlive/"><i class="social-icon fab fa-instagram"></i></a>
+    <a href="mailto:tom@tomrhudson.com"><i class="fas fa-envelope"></i></a>
+
     <p>2020 || Tom Hudson</p>
   </footer>
-<script src="index.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 
