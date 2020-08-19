@@ -3,6 +3,14 @@ header {
   border-bottom: 1px solid grey;
 }
 
+body {
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: white;
+}
+
 /* NAVIGATION BAR */
 .nav-bar {
   background-color: white;
@@ -50,12 +58,38 @@ header {
 
 /* FONT CARDS  */
 .font-card {
-  height: 290px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.font-card h2 {
+  font-size: 1.25em;
+}
+
+.font-card-info {
+
+}
+
+.addFont {
+  position: absolute;
+  border: 2px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.font-card-sample {
+
 }
 
 .font-card h2, .font-card-info p {
   font-family: monospace;
-  font-size: 1em;
+  font-size: 20px;
 }
 
 /* ASIDE */
