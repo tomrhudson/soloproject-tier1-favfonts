@@ -5,12 +5,12 @@ const originalSampleText = "Almost before we knew it, we had left the ground.";
 function hamburgerNavBarIcon() {
 
   // Top Navigation Bar Function
-  var x = document.getElementById("topNavBar");
+  var navBarTop = document.getElementById("nav-bar-top");
 
-  if (x.className === "nav-bar") {
-    x.className += " responsive";
+  if (navBarTop.className === "nav-bar") {
+    navBarTop.className += " responsive";
   } else {
-    x.className = "nav-bar";
+    navBarTop.className = "nav-bar";
   };
 }
 
