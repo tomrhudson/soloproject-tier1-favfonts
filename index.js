@@ -15,7 +15,7 @@ function hamburgerNavBarIcon() {
 }
 
 function changeColor(colorChosen) {
-  if(colorChosen == "white") {
+  if (colorChosen == "white") {
     document.documentElement.style.setProperty("--mode-color-background", "white");
     document.documentElement.style.setProperty("--mode-color-foreground", "black");
   } else {
@@ -25,7 +25,7 @@ function changeColor(colorChosen) {
 }
 
 function changeFontCardLayout() {
-  // 
+  //
 }
 
 function searchFonts() {
@@ -81,13 +81,13 @@ function changeSampleText(event) {
 
 function resetAll() {
   // reset values back to page launch values
-  document.getElementById("font-size").value = "20px";
+  document.getElementById("font-size").value = "32px";
   document.getElementById("sample-text").value = originalSampleText;
   document.getElementById("search-fonts").value = "Search fonts";
 
   //call functions that reset font cards based on reset values
   changeFontSize();
-  changeColor();
+  changeColor("white");
   changeFontCardLayout();
   changeSampleText();
 }
