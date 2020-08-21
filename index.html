@@ -37,7 +37,7 @@
 
   <main>
     <nav id="user-nav">
-      <input type="text" id="search-fonts" name="search-fonts" placeholder="Search fonts">
+      <input type="text" id="search-fonts" name="search-fonts" placeholder="Search fonts" oninput="searchFonts(event)">
       <input type="text" id="sample-text" name="sample-text" placeholder="Almost before we knew it, we had left the ground." oninput="changeSampleText(event)">
       <select class="" id="font-size" onchange="changeFontSize(event)">
         <option value="20px">20px</option>
@@ -63,7 +63,7 @@
     <section id="font-card-container">
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Antic Slab</h2>
+          <h2 id="font-name">Antic Slab</h2>
           <p>Santiago Orozco</p>
           <p class="addFont">+</p>
         </div>
@@ -73,7 +73,7 @@
       </div>
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Rowdies</h2>
+          <h2 id="font-name">Rowdies</h2>
           <p>Jaikishan Patel</p>
           <p class="addFont">+</p>
         </div>
@@ -83,7 +83,7 @@
       </div>
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Lato</h2>
+          <h2 id="font-name">Lato</h2>
           <p>Lukasz Dziedic</p>
           <p class="addFont">+</p>
         </div>
@@ -93,7 +93,7 @@
       </div>
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Lemonada</h2>
+          <h2 id="font-name">Lemonada</h2>
           <p>Multiple Designers</p>
           <p class="addFont">+</p>
         </div>
@@ -103,7 +103,7 @@
       </div>
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Sriracha</h2>
+          <h2 id="font-name">Sriracha</h2>
           <p>Cadson Demak</p>
           <p class="addFont">+</p>
         </div>
@@ -113,7 +113,7 @@
       </div>
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Noto Sans JP</h2>
+          <h2 id="font-name">Noto Sans JP</h2>
           <p>Google</p>
           <p class="addFont">+</p>
         </div>
@@ -124,7 +124,7 @@
 
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Open Sans</h2>
+          <h2 id="font-name">Open Sans</h2>
           <p>Steve Matteson</p>
           <p class="addFont">+</p>
         </div>
@@ -135,7 +135,7 @@
 
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Recursive</h2>
+          <h2 id="font-name">Recursive</h2>
           <p>Stephen Nixon</p>
           <p class="addFont">+</p>
         </div>
@@ -146,7 +146,7 @@
 
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Red Rose</h2>
+          <h2 id="font-name">Red Rose</h2>
           <p>Jaikishan Patel</p>
           <p class="addFont">+</p>
         </div>
@@ -156,7 +156,7 @@
       </div>
       <div class="font-card">
         <div class="font-card-info">
-          <h2>Roboto</h2>
+          <h2 id="font-name">Roboto</h2>
           <p>Christian Robertson</p>
           <p class="addFont">+</p>
         </div>
@@ -164,7 +164,7 @@
           <p style="font-family:Roboto">Almost before we knew it, we had left the ground.</p>
         </div>
       </div>
-      
+
     </section>
   </main>
 

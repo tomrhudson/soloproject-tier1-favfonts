@@ -14,11 +14,33 @@ function hamburgerNavBarIcon() {
   };
 }
 
-function changeColor() {
-
+function changeColor(colorChosen) {
+  if(colorChosen == "white") {
+    document.documentElement.style.setProperty("--mode-color-background", "white");
+    document.documentElement.style.setProperty("--mode-color-foreground", "black");
+  } else {
+    document.documentElement.style.setProperty("--mode-color-background", "black");
+    document.documentElement.style.setProperty("--mode-color-foreground", "white");
+  }
 }
 
 function changeFontCardLayout() {
+  // 
+}
+
+function searchFonts() {
+  var currentCounter = 0;
+  var fontCard = document.getElementById("font-card");
+  var fontNames = document.querySelectorAll("h2");
+  var searchFont = document.getElementById("search-fonts").value.trim();
+
+  searchFont = searchFont.toLowerCase();
+
+  for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
+
+  };
+
+  console.log(fontNames[currentCounter].innerHTML);
 
 }
 
