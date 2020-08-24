@@ -37,9 +37,10 @@ function searchFonts() {
   searchFont = searchFont.toLowerCase();
 
   for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
-
+    if (searchFont !== fontNames) {
+      // fontCard.style.display="none";
+    };
   };
-  console.log(fontNames[currentCounter].innerHTML);
 }
 
 function changeFontSize() {
