@@ -10,7 +10,7 @@ function hamburgerNavBarIcon() {
   if (navBarTop.className === "nav-bar") {
     navBarTop.className += " responsive";
   } else {
-    navBarTop.className = "nav-bar";
+    navBarTop.className == "nav-bar";
   };
 }
 
@@ -24,15 +24,15 @@ function changeColor(colorChosen) {
   };
 }
 
-function changeFontCardLayout() {
+function changeFontCardLayout(layoutChosen) {
   // var currentCounter = 0;
   // var fontCard = document.getElementById("font-card");
-  // //
-  // if (changeFontCardLayout = "grid-view") {
-  //
-  // } else {
-  //   fontCard.style.width = "100%";
-  // };
+  if (changeFontCardLayout == "list") {
+    console.log("list");
+  } else {
+    console.log("grid");
+    // fontCard.style.width = "100%";
+  };
 }
 
 function searchFonts() {
@@ -88,6 +88,7 @@ function resetAll() {
   //call functions that reset font cards based on reset values
   changeFontSize();
   changeColor("white");
+  changeFontCardLayout("grid");
   changeFontCardLayout();
   changeSampleText();
 }

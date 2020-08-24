@@ -50,12 +50,8 @@
           <div id="white" onclick="changeColor('white')"></div>
           <div id="black" onclick="changeColor('black')"></div>
         </div>
-        <button type="button" name="user-nav-grid" id="user-nav-grid">
-          <i class="fas fa-border-all hide" id="grid-icon" onclick="changeFontCardLayout("grid-view")"></i>
-        </button>
-        <button type="button" name="user-nav-list" id="user-nav-list">
-          <i class="fas fa-list-ul" id="list-icon" onclick="changeFontCardLayout("list-view")"></i>
-        </button>
+        <button type="button" id="grid" onclick="changeFontCardLayout('grid')"><i class="fas fa-border-all hide"></i></button>
+        <button type="button" id="list" onclick="changeFontCardLayout('list')"><i class="fas fa-list-ul"></i></button>
         <button type="button" name="user-nav-reset" id="user-nav-reset" onclick="resetAll()"><i class="fas fa-redo"></i></button>
       </div>
     </nav>
