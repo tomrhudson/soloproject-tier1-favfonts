@@ -39,9 +39,7 @@ function searchFonts() {
   for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
 
   };
-
   console.log(fontNames[currentCounter].innerHTML);
-
 }
 
 function changeFontSize() {
@@ -49,13 +47,7 @@ function changeFontSize() {
   var selectedFontSize = document.getElementById("font-size").value;
   var currentCounter = 0;
 
-  // console.log("FUNCTION: change font size");
-  // console.log("# of font cards: " + fontCards.length);
-  // console.log("selected font size: " + selectedFontSize);
-
   for (currentCounter; currentCounter < fontCards.length; currentCounter++) {
-    // console.log("loop count: " + currentCounter);
-    // console.log("current font size: " + fontCards[counter].style.fontSize);
     fontCards[currentCounter].style.fontSize = selectedFontSize;
   };
 }

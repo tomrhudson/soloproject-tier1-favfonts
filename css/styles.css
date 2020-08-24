@@ -111,6 +111,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 input, select, button {
   border: none;
+  cursor: pointer;
 }
 
 .hide {
@@ -131,6 +132,7 @@ main {
 input, button, select, i {
   background-color: var(--mode-color-background, white);
   color: var(--mode-color-foreground, black);
+
 }
 
 /* FONT CARD CONTAINER */
