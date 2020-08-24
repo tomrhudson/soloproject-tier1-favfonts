@@ -21,26 +21,33 @@ function changeColor(colorChosen) {
   } else {
     document.documentElement.style.setProperty("--mode-color-background", "black");
     document.documentElement.style.setProperty("--mode-color-foreground", "white");
-  }
+  };
 }
 
 function changeFontCardLayout() {
+  // var currentCounter = 0;
+  // var fontCard = document.getElementById("font-card");
+  // //
+  // if (changeFontCardLayout = "grid-view") {
   //
+  // } else {
+  //   fontCard.style.width = "100%";
+  // };
 }
 
 function searchFonts() {
-  var currentCounter = 0;
-  var fontCard = document.getElementById("font-card");
-  var fontNames = document.querySelectorAll("h2");
-  var searchFont = document.getElementById("search-fonts").value.trim();
-
-  searchFont = searchFont.toLowerCase();
-
-  for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
-    if (searchFont !== fontNames) {
-      // fontCard.style.display="none";
-    };
-  };
+  // var currentCounter = 0;
+  // var fontCard = document.getElementById("font-card");
+  // var fontNames = document.querySelectorAll("h2");
+  // var searchFont = document.getElementById("search-fonts").value.trim();
+  //
+  // searchFont = searchFont.toLowerCase();
+  //
+  // for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
+  //   if (searchFont !== fontNames) {
+  //     // fontCard.style.display="none";
+  //   };
+  // };
 }
 
 function changeFontSize() {
