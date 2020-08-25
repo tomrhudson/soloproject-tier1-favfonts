@@ -42,19 +42,41 @@ function listLayout() {
   };
 }
 
-function searchFonts() {
-  
+function resetFontCards() {
   var currentCounter = 0;
-  var fontCard = document.getElementById(".font-card");
+  var fontCards = document.querySelectorAll(".font-card");
+  var fontNames = document.querySelectorAll("h2");
+
+  for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
+      fontCards[currentCounter].style.display = "block";
+  };
+}
+
+function searchFonts() {
+
+  var currentCounter = 0;
+  var fontCards = document.querySelectorAll(".font-card");
   var fontNames = document.querySelectorAll("h2");
   var searchFont = document.getElementById("search-fonts").value.trim();
+  var searchString;
+  var fontName;
 
   searchFont = searchFont.toLowerCase();
-  console.log(searchFont);
+
+  if (searchFont =="") {
+    resetFontCards();
+  };
+
   for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
-    if (searchFont !== fontNames) {
-      fontCard.style.display="none";
-    };
+    fontName = fontNames[currentCounter].textContent.toLowerCase();
+    searchString = fontName.search(searchFont);
+
+    // no match found, hide blocks that do not have a match
+    if (searchString == -1) {
+      fontCards[currentCounter].style.display = "none";
+    } else {
+      fontCards[currentCounter].style.display = "block";
+    }
   };
 }
 
@@ -95,6 +117,7 @@ function resetAll() {
 
   //call functions that reset font cards based on reset values
   changeFontSize();
+  resetFontCards();
   changeColor("white");
   gridLayout();
   changeSampleText();
