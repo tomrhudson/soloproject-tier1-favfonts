@@ -14,6 +14,29 @@ function hamburgerNavBarIcon() {
   };
 }
 
+let options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: [.75]
+}
+
+function showBackToTopIcon(entry) {
+  let div = document.querySelector("#back-to-top");
+  console.log(entry[0].isIntersecting);
+  entry[0].isIntersecting ? div.style.display = "none" : div.style.display = "block";
+}
+
+let observer = new IntersectionObserver(showBackToTopIcon, options);
+observer.observe(document.querySelector("header"));
+
+function scrollToTop() {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+
 function changeColor(colorChosen) {
   if (colorChosen == "white") {
     document.documentElement.style.setProperty("--mode-color-background", "white");
