@@ -48,7 +48,7 @@ function resetFontCards() {
   var fontNames = document.querySelectorAll("h2");
 
   for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
-      fontCards[currentCounter].style.display = "block";
+    fontCards[currentCounter].style.display = "block";
   };
 }
 
@@ -63,7 +63,7 @@ function searchFonts() {
 
   searchFont = searchFont.toLowerCase();
 
-  if (searchFont =="") {
+  if (searchFont == "") {
     resetFontCards();
   };
 

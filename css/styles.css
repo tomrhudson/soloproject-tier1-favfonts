@@ -132,7 +132,6 @@ main {
 input, button, select, i {
   background-color: var(--mode-color-background, white);
   color: var(--mode-color-foreground, black);
-
 }
 
 /* FONT CARD CONTAINER */
