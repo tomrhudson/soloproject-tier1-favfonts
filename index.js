@@ -24,30 +24,38 @@ function changeColor(colorChosen) {
   };
 }
 
-function changeFontCardLayout(layoutChosen) {
-  // var currentCounter = 0;
-  // var fontCard = document.getElementById("font-card");
-  if (changeFontCardLayout == "list") {
-    console.log("list");
-  } else {
-    console.log("grid");
-    // fontCard.style.width = "100%";
+function gridLayout() {
+  var fontCards = document.querySelectorAll(".font-card");
+  var currentCounter = 0;
+
+  for (currentCounter; currentCounter < fontCards.length; currentCounter++) {
+    fontCards[currentCounter].style.width = "471px";
+  };
+}
+
+function listLayout() {
+  var fontCards = document.querySelectorAll(".font-card");
+  var currentCounter = 0;
+
+  for (currentCounter; currentCounter < fontCards.length; currentCounter++) {
+    fontCards[currentCounter].style.width = "100%";
   };
 }
 
 function searchFonts() {
-  // var currentCounter = 0;
-  // var fontCard = document.getElementById("font-card");
-  // var fontNames = document.querySelectorAll("h2");
-  // var searchFont = document.getElementById("search-fonts").value.trim();
-  //
-  // searchFont = searchFont.toLowerCase();
-  //
-  // for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
-  //   if (searchFont !== fontNames) {
-  //     // fontCard.style.display="none";
-  //   };
-  // };
+  
+  var currentCounter = 0;
+  var fontCard = document.getElementById(".font-card");
+  var fontNames = document.querySelectorAll("h2");
+  var searchFont = document.getElementById("search-fonts").value.trim();
+
+  searchFont = searchFont.toLowerCase();
+  console.log(searchFont);
+  for (currentCounter; currentCounter < fontNames.length; currentCounter++) {
+    if (searchFont !== fontNames) {
+      fontCard.style.display="none";
+    };
+  };
 }
 
 function changeFontSize() {
@@ -88,7 +96,6 @@ function resetAll() {
   //call functions that reset font cards based on reset values
   changeFontSize();
   changeColor("white");
-  changeFontCardLayout("grid");
-  changeFontCardLayout();
+  gridLayout();
   changeSampleText();
 }
