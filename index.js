@@ -22,7 +22,6 @@ let options = {
 
 function showBackToTopIcon(entry) {
   let div = document.querySelector("#back-to-top");
-  console.log(entry[0].isIntersecting);
   entry[0].isIntersecting ? div.style.display = "none" : div.style.display = "block";
 }
 
