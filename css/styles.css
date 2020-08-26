@@ -218,11 +218,6 @@ footer {
   margin-bottom: 1.25em;
 }
 
-/* RESPONSIVE */
-#sample-text, #font-size, #user-nav-color-chooser, #user-nav-grid, #user-nav-list #user-nav-gridl i #user-nav-list i {
-  display: none;
-}
-
 #search-fonts {
   flex-grow: 3;
 }
