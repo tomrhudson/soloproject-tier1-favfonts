@@ -10,7 +10,7 @@ function hamburgerNavBarIcon() {
   if (navBarTop.className === "nav-bar") {
     navBarTop.className += " responsive";
   } else {
-    navBarTop.className == "nav-bar";
+    navBarTop.className = "nav-bar";
   };
 }
 
