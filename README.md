@@ -48,6 +48,8 @@ Provide code examples and explanations of how to get the project, e.g.,
 	git clone https://github.com/tomrhudson/soloproject-tier1-favfonts.git
   	Open index.html in your favorite browser.
 
+The PHP file is only here to allow the code to run on [Heroku](https://heroku.com)
+
 ## Reference
 
 + [chingu-voyages/soloproject-tier1-favfonts](https://github.com/chingu-voyages/soloproject-tier1-favfonts)
